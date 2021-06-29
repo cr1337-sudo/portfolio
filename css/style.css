@@ -256,13 +256,28 @@ h3 {
   100% {
     transform: translateY(0); } }
 
+.content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  animation: backend 2.5s linear infinite; }
+
+@keyframes backend {
+  0% {
+    transform: translateY(0); }
+  50% {
+    transform: translateY(25px); }
+  100% {
+    transform: translateY(0); } }
+
 .database {
   /* Cambiar DISPLAy! */
   margin-top: -30px;
   display: flex;
-  align-content: center;
   flex-direction: column;
   justify-content: flex-start;
+  align-items: center;
   max-width: 100%; }
 
 .block {
@@ -271,7 +286,7 @@ h3 {
   background-color: #615b66;
   border-radius: 3px;
   display: flex;
-  align-content: center;
+  align-items: center;
   margin-bottom: -6px; }
 
 .lines {
@@ -315,9 +330,9 @@ h3 {
 /* CLOUD */
 .cloud {
   display: flex;
-  align-content: center;
   flex-direction: column;
   justify-content: flex-end;
+  align-items: center;
   /* margin-bottom: -50px; */ }
 
 .base {
@@ -351,9 +366,9 @@ h3 {
 /* Lineas inferiores conectando a la Db */
 .wires {
   display: flex;
-  align-content: center;
   width: 115px;
   justify-content: space-around;
+  align-items: center;
   margin-top: -67px; }
 
 .wire {
