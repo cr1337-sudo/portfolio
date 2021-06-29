@@ -1,0 +1,10 @@
+* {
+  font-family: "Roboto Mono", monospace;
+  font-size: 62.5%;
+  background-color: #0E1212;
+  text-decoration: none;
+  /* color: #ffe5e2; */
+  color: map-get($colorsMap,"white");
+  list-style: none;
+  scroll-behavior: smooth;
+};
