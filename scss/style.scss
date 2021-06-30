@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
 @import "base/colors";
 @import "base/reset";
@@ -7,21 +8,35 @@
 header {
   height: 100vh;
 }
-h1 {
-  margin-bottom: 1rem;
-}
+
 h2 {
   font-size: 6.2rem;
   font-weight: 400;
+  margin-bottom: 1.8rem;
 }
 
 h3 {
   font-size: 1.9rem;
+  margin: 3rem 0;
+}
+/* Subtitulos y framekeys */
+.sub-title {
+  font-size: 3rem;
+  font-family: "VT323", monospace;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  animation: changeColor 2s linear infinite;
 }
 
-.navbar {
-  margin-left: 4.5rem;
+@keyframes changeColor {
+  0% {
+    background-color: map-get($colorsMap, "purple");
+  }
+}
+/*  ---------------------------*/
 
+/* Navbar  */
+.navbar {
   &__side-bar {
     height: 0.3rem;
     width: 0%;
@@ -64,15 +79,16 @@ h3 {
 .down-header {
   height: 100vh;
   padding-top: 25rem;
-  padding-left: 5.5rem;
-  padding-right: 5.5rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
   transition: all 0.8s ease-in-out;
 
   &__name-top {
-    font-size: 7.2rem;
+    font-size: 5.2rem;
     font-weight: 200;
+    margin-bottom: 1rem;
     &__name-mid {
-      font-size: 7.3rem;
+      font-size: 6rem;
       color: map-get($colorsMap, "purple");
       letter-spacing: 0.5rem;
       display: block;
@@ -82,7 +98,7 @@ h3 {
   }
   &__name-down,
   &__name-down span {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     color: #757575;
     margin: 0.1rem;
     font-weight: 400;
@@ -95,13 +111,12 @@ h3 {
 /* ABOUT */
 /* CAMBIAR EL H2 */
 .title {
-  font-size: 1.7rem;
+  font-size: 1.6rem;
   color: #757575;
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.1rem;
 }
 .about {
-  padding: 6.3rem 5.5rem;
-
+  padding: 6.3rem 2.5rem;
   &__title a i {
     font-size: 3rem;
     color: map-get($colorsMap, "purple");
@@ -118,16 +133,30 @@ h3 {
   &__skills {
     &__ul {
       display: grid;
-      grid-template-columns: auto;
-      justify-content: center;
-      align-items: center;
+      grid-template-columns: auto auto;
+      gap: 1rem;
+      padding: 0;
+      .skill {
+        text-align: center;
+        img {
+          background-color: map-get($colorsMap, "purple");
+          height: 10rem;
+          padding: 1rem;
+          border-radius: 1rem;
+          margin: 1rem;
 
-      li {
-        padding: 1.5rem;
-        p {
-          padding: 1rem 0;
-          font-size: 1.8rem;
-          color: #757575;
+          &:hover {
+            animation: shake 1.4s;
+            animation-iteration-count: infinite;
+          }
+        }
+        p,
+        span {
+          margin-top: 0.2rem;
+          font-size: 1.6rem;
+        }
+        span {
+          display: block;
         }
       }
     }
@@ -137,35 +166,43 @@ h3 {
 /* TECH */
 
 .tech {
-  padding: 2.5rem 5.5rem;
-  height: 25rem;
-  &__ul {
-    @include flexbox;
-    justify-content: space-around;
+  padding: 6.3rem 2.5rem;
+  min-height: 25rem;
+  &__cont {
+    display: grid;
+    row-gap: 2rem;
+    column-gap: 2rem;
+    justify-content: center;
+    grid-template-columns: auto auto;
+    padding: 0;
     height: 100%;
-    li i,
-    li img {
-      font-size: 30px;
-      color: white;
-      padding: 15px;
-      border-radius: 100%;
+    img {
+      border-radius: 1rem;
+      &:hover {
+        animation: shake 1.4s;
+        animation-iteration-count: infinite;
+      }
     }
-    &__html5 {
-      background-color: #e54c21;
-    }
-
-    &__css3 {
-      background-color: #0170b9;
-    }
-    &__javascript {
-      background-color: #dab92d;
-    }
-    &__python {
-      background-color: #3472a3;
-    }
-    &__django {
-      background-color: #103e2e;
-    }
+  }
+}
+@keyframes shake {
+  0% {
+    transform: rotate(3deg) scale(1.2);
+  }
+  20% {
+    transform: rotate(-3deg) scale(1.2);
+  }
+  40% {
+    transform: rotate(3deg) scale(1.2);
+  }
+  60% {
+    transform: rotate(-3deg) scale(1.2);
+  }
+  80% {
+    transform: rotate(3deg) scale(1.2);
+  }
+  100% {
+    transform: rotate(0) scale(1.2);
   }
 }
 
@@ -174,7 +211,7 @@ h3 {
 /* Diseño mobile first con una columna, y a medida que va creciendo se divide en dos columnas y luego en 3 */
 
 .services {
-  padding: 6.3rem 5.5rem;
+  padding: 6.3rem 2.5rem;
   &__container {
     display: grid;
     grid-template-columns: auto;
@@ -188,9 +225,14 @@ h3 {
       i {
         font-size: 6rem;
         color: map-get($colorsMap, "purple");
+        &:hover {
+          animation: shake 1.4s;
+          animation-iteration-count: infinite;
+        }
       }
-      h4 {
+      h3 {
         font-size: 1.9rem;
+        margin: 2rem 0;
       }
       p {
         font-size: 1.6rem;
@@ -202,9 +244,9 @@ h3 {
 /* Works */
 
 .works {
-  padding: 6.3rem 7.5rem;
+  padding: 6.3rem 2.5rem;
   &__carousel {
-    width: 70rem;
+    width: 95%;
     max-height: 50rem;
     margin-top: 5rem;
     .carousel-inner .carousel-item img {
@@ -218,25 +260,24 @@ h3 {
 /* Contact */
 
 .contact {
-  padding: 6.3rem 7.5rem;
+  padding: 6.3rem 2.5rem;
 
   &__box {
-    width: 100%;
+    margin-top: 4rem;
     min-height: 50rem;
-    margin-top: 3rem;
     @include flexbox;
     justify-content: space-around;
 
     &__form {
-      border-radius: 4rem;
+      border-radius: 2rem;
       padding: 4rem 3rem;
-      width: 35%;
+      width: auto;
+      margin-bottom: 15rem;
       box-shadow: rgba(255, 255, 2525, 0.2) 0px 8px 24px;
 
       form {
         @include flexbox();
         flex-direction: column;
-
         padding: auto;
         input,
         textarea {
@@ -244,7 +285,7 @@ h3 {
           height: 3.2rem;
           font-size: 1.6rem;
           line-height: 2.2rem;
-          margin: 1rem 0;
+          margin: 2rem 0;
           border: none;
           border-bottom: 1.5px white solid;
           padding: 0.3rem;
@@ -292,49 +333,10 @@ h3 {
   }
 }
 
-/* Footer */
-
-.footer {
-  text-align: center;
-  font-size: 10rem;
-  padding: 0 7.5rem;
-  a {
-    i {
-      color: map-get($colorsMap, "purple");
-      &:hover {
-        color: #d3c8c8;
-        transition: all 1s ease;
-      }
-    }
-  }
-}
-
 /* Animacion */
-/* Animacion */
-
+/* Database */
 .content {
-  @include flexbox;
-
-  justify-content: center;
-  flex-direction: column;
-
-  animation: backend 2.5s linear infinite;
-}
-
-@keyframes backend {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(25px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-
-.content {
-  display: flex;
+  display: none;
   justify-content: center;
   flex-direction: column;
   align-items: center;
@@ -514,20 +516,67 @@ h3 {
   left: -9.7px;
 }
 
+/* Footer */
+
+.footer {
+  text-align: center;
+  font-size: 10rem;
+  padding: 0 7.5rem;
+  a {
+    i {
+      color: map-get($colorsMap, "purple");
+      &:hover {
+        color: #d3c8c8;
+        transition: all 1s ease;
+      }
+    }
+  }
+}
 /* Media querys */
 
 @media (min-width: 690px) {
+  h2,
+  h3,
+  .title,
+  .about__firstp,
+  #home {
+    padding-left: 5.5rem;
+  }
+
+  .down-header__name-top {
+    font-size: 8rem;
+    &__name-mid {
+      font-size: 7.2rem;
+    }
+  }
+  .down-header__name-down,
+  .down-header__name-down span {
+    font-size: 1.8rem;
+  }
   .services__container {
     grid-template-columns: auto auto;
   }
-  .about__skills__ul {
-    grid-template-columns: auto auto auto;
-    column-gap: 5rem;
+
+  .tech__cont {
+    grid-template-columns: repeat(3, auto);
+    gap: 7rem;
   }
 }
 
 @media (min-width: 900px) {
+  .tech__cont {
+    grid-template-columns: repeat(6, auto);
+    gap: 5rem;
+  }
   .services__container {
-    grid-template-columns: auto auto auto;
+    grid-template-columns: repeat(3, auto);
+  }
+  .about__skills__ul {
+    grid-template-columns: repeat(5, auto);
+  }
+
+  .content {
+    display: flex;
+    margin-top: -15rem;
   }
 }
