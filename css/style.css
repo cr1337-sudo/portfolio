@@ -20,15 +20,21 @@ header {
 h2 {
   font-size: 6.2rem;
   font-weight: 400;
-  margin-bottom: 1.8rem; }
+  padding-top: 3.6rem; }
 
 h3 {
-  font-size: 1.9rem;
-  margin: 3rem 0; }
+  font-size: 1.9rem; }
 
 /* Subtitulos y framekeys */
+.title {
+  font-size: 1.9rem;
+  color: #757575;
+  margin: 1.5rem 0;
+  letter-spacing: 0.1rem; }
+
 .sub-title {
   font-size: 3rem;
+  margin: 1.5rem 0;
   font-family: "VT323", monospace;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
@@ -46,20 +52,21 @@ h3 {
   background-color: #682ae9;
   position: fixed;
   top: 0;
-  left: -4.5rem; }
+  left: -2.5rem; }
 
 .navbar__cont__custom-toggler {
   border-color: #682ae9; }
 
 .navbar__cont__brand img {
-  height: 5rem; }
+  height: 5rem;
+  padding-left: 2.5rem; }
 
 .navbar__cont__collapse__navbar {
-  margin-left: 4.5rem; }
+  padding-left: 2.5rem; }
   .navbar__cont__collapse__navbar__nav-item {
     margin: 0.2rem; }
     .navbar__cont__collapse__navbar__nav-item__nav-link {
-      font-size: 1.6rem;
+      font-size: 1.8rem;
       margin: 0 5px;
       text-decoration: none; }
       .navbar__cont__collapse__navbar__nav-item__nav-link:hover {
@@ -69,7 +76,7 @@ h3 {
 /* Down header */
 .down-header {
   height: 100vh;
-  padding-top: 25rem;
+  padding-top: 22rem;
   padding-left: 2.5rem;
   padding-right: 2.5rem;
   transition: all 0.8s ease-in-out; }
@@ -94,14 +101,8 @@ h3 {
     display: block; }
 
 /* ABOUT */
-/* CAMBIAR EL H2 */
-.title {
-  font-size: 1.6rem;
-  color: #757575;
-  letter-spacing: 0.1rem; }
-
 .about {
-  padding: 6.3rem 2.5rem; }
+  padding: 2.3rem 2.5rem; }
   .about__title a i {
     font-size: 3rem;
     color: #682ae9; }
@@ -109,9 +110,11 @@ h3 {
       color: white;
       transition: all 1s ease; }
   .about__firstp {
-    font-size: 1.7rem;
+    font-size: 1.8rem;
+    margin: 1.5rem 0;
     color: #682ae9; }
   .about__skills__ul {
+    margin-top: 3.5rem;
     display: grid;
     grid-template-columns: auto auto;
     gap: 1rem;
@@ -136,12 +139,11 @@ h3 {
 
 /* TECH */
 .tech {
-  padding: 6.3rem 2.5rem;
-  min-height: 25rem; }
+  padding: 2.3rem 2.5rem; }
   .tech__cont {
+    margin-top: 3.8rem;
     display: grid;
-    row-gap: 2rem;
-    column-gap: 2rem;
+    gap: 2rem;
     justify-content: center;
     grid-template-columns: auto auto;
     padding: 0;
@@ -170,16 +172,15 @@ h3 {
 /* grid-template-colums: Auto para que cree una sola columna */
 /* Diseño mobile first con una columna, y a medida que va creciendo se divide en dos columnas y luego en 3 */
 .services {
-  padding: 6.3rem 2.5rem; }
+  padding: 2.5rem; }
   .services__container {
     display: grid;
     grid-template-columns: auto;
-    column-gap: 1.5rem;
-    row-gap: 1.5rem; }
+    gap: 1.5rem; }
     .services__container__service {
       display: flex;
       flex-direction: column;
-      padding: 4rem;
+      padding: 1.7rem;
       text-align: center; }
       .services__container__service i {
         font-size: 6rem;
@@ -188,26 +189,30 @@ h3 {
           animation: shake 1.4s;
           animation-iteration-count: infinite; }
       .services__container__service h3 {
-        font-size: 1.9rem;
-        margin: 2rem 0; }
+        font-size: 2.2rem;
+        margin: 2rem 0;
+        font-weight: 500; }
       .services__container__service p {
-        font-size: 1.6rem; }
+        font-size: 1.8rem; }
 
 /* Works */
 .works {
-  padding: 6.3rem 2.5rem; }
+  padding: 2.5rem; }
+  .works__container {
+    margin-top: 3.8rem;
+    display: grid;
+    grid-template-columns: auto;
+    gap: 2.5rem;
+    justify-items: center; }
   .works__carousel {
-    width: 95%;
-    max-height: 50rem;
-    margin-top: 5rem; }
+    max-width: 80%;
+    height: auto; }
     .works__carousel .carousel-inner .carousel-item img {
-      width: 70rem;
-      max-height: 50rem;
       object-fit: cover; }
 
 /* Contact */
 .contact {
-  padding: 6.3rem 2.5rem; }
+  padding: 2.5rem; }
   .contact__box {
     margin-top: 4rem;
     min-height: 50rem;
@@ -437,8 +442,8 @@ h3 {
 /* Media querys */
 @media (min-width: 690px) {
   h2,
-  h3,
   .title,
+  .sub-title,
   .about__firstp,
   #home {
     padding-left: 5.5rem; }
@@ -451,6 +456,8 @@ h3 {
     font-size: 1.8rem; }
   .services__container {
     grid-template-columns: auto auto; }
+  .works__container {
+    grid-template-columns: repeat(2, auto); }
   .tech__cont {
     grid-template-columns: repeat(3, auto);
     gap: 7rem; } }

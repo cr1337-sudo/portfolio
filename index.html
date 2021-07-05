@@ -2,277 +2,330 @@
 <html lang="en">
 
 <head>
-	<!-- Meta -->
-	<meta charset="UTF-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=no" />
-	<meta name="description" content="Cristian Cuello, back-end developer. Let's create your next website together!">
-	<meta name="keywords"
-		content="JSON, JavaScript, Python, HTML, CSS, Django, Node.js, Backend developer, Frontend developer, Fullstack developer, SEO, Website">
-	<!-- Links de bootstrap -->
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
-		integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
-	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-		integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-	<!-- Normalize css para normalizar estilos -->
-	<link rel="stylesheet" href="css/normalize.css" /> <!-- Main proveniente de styles.scss -->
-	<link rel="stylesheet" href="css/style.css" /> <!-- favicon de la web -->
-	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
-	<title>Cristian Cuello Portfolio | Backend Developer</title>
+   <!-- Meta -->
+   <meta charset="UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=no" />
+   <meta name="description" content="Cristian Cuello, back-end developer. Let's create your next website together!">
+   <meta name="keywords"
+      content="JSON, JavaScript, Python, HTML, CSS, Django, Node.js, Backend developer, Frontend developer, Fullstack developer, SEO, Website">
+   <!-- Links de bootstrap -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
+   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+   <!-- Normalize css para normalizar estilos -->
+   <link rel="stylesheet" href="css/normalize.css" /> <!-- Main proveniente de styles.scss -->
+   <link rel="stylesheet" href="css/style.css" /> <!-- favicon de la web -->
+   <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+   <title>Cristian Cuello Portfolio | Backend Developer</title>
 </head>
 
 <body>
-	<!-- Header -->
-	<header>
-		<nav id="nav-bar" class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3">
-			<section id="side-bar" class="navbar__side-bar "></section>
-			<div class="container-fluid navbar__cont"> <a class="navbar__cont__brand brand" href="#"> <img
-						src="images/logo.gif" alt="Website Logo"> </a> <button
-					class="navbar-toggler navbar__cont__custom-toggler" type="button" data-bs-toggle="collapse"
-					data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-					aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
-				<div class="collapse navbar-collapse navbar__cont_collapse" id="navbarNav">
-					<div class="mx-auto"></div>
-					<ul class="navbar-nav navbar__cont__collapse__navbar">
-						<li class="navbar__cont__collapse__navbar__nav-item"> <a
-								class="navbar__cont__collapse__navbar__nav-item__nav-link text-white"
-								href="#about">.about()</a> </li>
-						<li class="nav-item navbar__cont__collapse__navbar__nav-item"> <a
-								class="navbar__cont__collapse__navbar__nav-item__nav-link text-white"
-								href="#services">.services()</a> </li>
-						<li class="navbar__cont__collapse__navbar__nav-item"> <a
-								class="navbar__cont__collapse__navbar__nav-item__nav-link text-white"
-								href="#works">.works()</a> </li>
-						<li class="navbar__cont__collapse__navbar__nav-item"> <a
-								class="navbar__cont__collapse__navbar__nav-item__nav-link text-white"
-								href="#contact">.contact()</a> </li>
-					</ul>
-				</div>
-			</div>
-		</nav> <!-- Down header -->
-		<div id="home" class="down-header">
-			<h1 class="down-header__name-top">Hi, I'm <span class="down-header__name-top__name-mid">Cristian
-					Cuello</span>
-			</h1>
-			<p class="down-header__name-down">Backend developer <span>Python lover</span> </p>
-		</div>
-		</div>
-	</header> <!-- Contenido principal -->
-	<main>
-		<!-- Sobre mi -->
-		<section id="about" class="about">
-			<h2 class="about__title"> about() <a href="#"><i class="fab fa-linkedin"></i></a> <a href="#"><i
-						class="fab fa-github"></i></a> </h2>
-			<p class="about__firstp"> I'm a backend (Python/Django) developer based in Argentina </p>
-			<p class="title"> // I like to learn the hard way and code the easy way </p>
-			<section class="about__skills">
-				<h3 class="sub-title">Soft skills</h3>
-				<ul class="about__skills__ul">
-					<li class="skill">
-						<img src="/images/skills/communication.png" alt="">
-						<p>Communication</p>
-					</li>
-					<li class="skill">
-						<img src="/images/skills/dec.png" alt="">
-						<p>Decisiveness</p>
-					</li>
-					<li class="skill">
-						<img src="/images/skills/empathy.png" alt="">
-						<p>Empathy</p>
-					</li>
-					<li class="skill">
-						<img src="/images/skills/flexibility.png" alt="">
-						<p>Flexibility</p>
-					</li>
-					<li class="skill">
-						<img src="/images/skills/good.png" alt="">
-						<p>Positive attitude</p>
-					</li>
-					<li class="skill">
-						<img src="/images/skills/motivation.png" alt="">
-						<p>Self-motivation</p>
-					</li>
-					<li class="skill">
-						<img src="/images/skills/problem_solving.png" alt="">
-						<p>Problem solving</p>
-					</li>
-					<li class="skill">
-						<img src="/images/skills/responsability.png" alt="">
-						<p>Responsability</p>
-					</li>
-					<li class="skill">
-						<img src="/images/skills/time.png" alt="">
-						<p>Ability to work <span>undear preassure</span></p>
-					</li>
-					<li class="skill">
-						<img src="/images/skills/teamwork.png" alt="">
-						<p>Teamwork</p>
-					</li>
+   <!-- Header -->
+   <header>
+      <nav id="nav-bar" class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3">
+         <section id="side-bar" class="navbar__side-bar "></section>
+         <div class="container-fluid navbar__cont"> <a class="navbar__cont__brand brand" href="#"> <img
+                  src="images/logo.gif" alt="Website Logo"> </a> <button
+               class="navbar-toggler navbar__cont__custom-toggler" type="button" data-bs-toggle="collapse"
+               data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+               aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+            <div class="collapse navbar-collapse navbar__cont_collapse" id="navbarNav">
+               <div class="mx-auto"></div>
+               <ul class="navbar-nav navbar__cont__collapse__navbar">
+                  <li class="navbar__cont__collapse__navbar__nav-item"> <a
+                        class="navbar__cont__collapse__navbar__nav-item__nav-link text-white" href="#about">.about()</a>
+                  </li>
+                  <li class="nav-item navbar__cont__collapse__navbar__nav-item"> <a
+                        class="navbar__cont__collapse__navbar__nav-item__nav-link text-white"
+                        href="#services">.services()</a> </li>
+                  <li class="navbar__cont__collapse__navbar__nav-item"> <a
+                        class="navbar__cont__collapse__navbar__nav-item__nav-link text-white" href="#works">.works()</a>
+                  </li>
+                  <li class="navbar__cont__collapse__navbar__nav-item"> <a
+                        class="navbar__cont__collapse__navbar__nav-item__nav-link text-white"
+                        href="#contact">.contact()</a> </li>
+               </ul>
+            </div>
+         </div>
+      </nav> <!-- Down header -->
+      <div id="home" class="down-header">
+         <h1 class="down-header__name-top">Hi, I'm <span class="down-header__name-top__name-mid">Cristian
+               Cuello</span>
+         </h1>
+         <p class="down-header__name-down">Backend developer <span>Python lover</span> </p>
+      </div>
+      </div>
+   </header> <!-- Contenido principal -->
+   <main>
+      <!-- Sobre mi -->
+      <section id="about" class="about">
+         <h2 class="about__title"> about() <a href="#"><i class="fab fa-linkedin"></i></a> <a href="#"><i
+                  class="fab fa-github"></i></a> </h2>
+         <p class="about__firstp"> I'm a backend (Python/Django) developer based in Argentina </p>
+         <p class="title"> // I like to learn the hard way and code the easy way </p>
+         <section class="about__skills">
+            <h3 class="sub-title">Soft skills</h3>
+            <ul class="about__skills__ul">
+               <li class="skill">
+                  <img src="images/skills/communication.png" alt="">
+                  <p>Communication</p>
+               </li>
+               <li class="skill">
+                  <img src="images/skills/dec.png" alt="">
+                  <p>Decisiveness</p>
+               </li>
+               <li class="skill">
+                  <img src="/images/skills/empathy.png" alt="">
+                  <p>Empathy</p>
+               </li>
+               <li class="skill">
+                  <img src="/images/skills/flexibility.png" alt="">
+                  <p>Flexibility</p>
+               </li>
+               <li class="skill">
+                  <img src="/images/skills/good.png" alt="">
+                  <p>Positive attitude</p>
+               </li>
+               <li class="skill">
+                  <img src="/images/skills/motivation.png" alt="">
+                  <p>Self-motivation</p>
+               </li>
+               <li class="skill">
+                  <img src="/images/skills/problem_solving.png" alt="">
+                  <p>Problem solving</p>
+               </li>
+               <li class="skill">
+                  <img src="/images/skills/responsability.png" alt="">
+                  <p>Responsability</p>
+               </li>
+               <li class="skill">
+                  <img src="/images/skills/time.png" alt="">
+                  <p>Ability to work <span>undear preassure</span></p>
+               </li>
+               <li class="skill">
+                  <img src="/images/skills/teamwork.png" alt="">
+                  <p>Teamwork</p>
+               </li>
 
-				</ul>
-			</section>
-		</section>
-		<section class="tech">
-			<h3 class="sub-title">Technologies</h3>
-			<div class="tech__cont">
-				<img src="/images/tech/html.png" alt="">
-				<img src="/images/tech/css.png" alt="">
-				<img src="/images/tech/sass.png" alt="">
-				<img src="/images/tech/bs.png" alt="">
-				<img src="/images/tech/js.png" alt="">
-				<img src="/images/tech/node.png" alt="">
-				<img src="/images/tech/mongo.png" alt="">
-				<img src="/images/tech/npm.png" alt="">
-				<img src="/images/tech/python.png" alt="">
-				<img src="/images/tech/django.png" alt="">
-				<img src="/images/tech/git.png" alt="">
-				<img src="/images/tech/console.png" alt="">
+            </ul>
+         </section>
+      </section>
+      <section class="tech">
+         <h3 class="sub-title">Technologies</h3>
+         <div class="tech__cont">
+            <img src="/images/tech/html.png" alt="HTML | Lenguaje de marcado de hipertexto"
+               title="HTML | Lenguaje de etiquetas de hipertexto">
+            <img src="/images/tech/css.png" alt="CSS | Hoja de estilos en cascada"
+               title="CSS | Hoja de estilos en cascada">
+            <img src="/images/tech/sass.png" alt="SASS | Preprocesador util en CSS"
+               title="SASS | Preprocesador util en CSS">
+            <img src="/images/tech/bs.png" alt="Boostrap | Framework muy conocido de CSS"
+               title="Boostrap | Framework muy conocido de CSS">
+            <img src="/images/tech/js.png" alt="JavaScript | Lenguaje utilizado para dar dinamismo a sitios web"
+               title="JavaScript | Lenguaje utilizado para dar dinamismo a sitios web">
+            <img src="/images/tech/node.png"
+               alt="Node.Js | Entorno de ejecución de JavaScript, sirve para crear API's y sitios web"
+               title="Node.Js | Entorno de ejecución de JavaScript, sirve para crear API's y sitios web">
+            <img src="/images/tech/mongo.png"
+               alt="Mongo.DB | Base de datos utilizada generalmente en conjunto con Node.Js"
+               title="Mongo.DB | Base de datos utilizada generalmente en conjunto con Node.Js">
+            <img src="/images/tech/npm.png" alt="NPM | Sistema de gestión de paquetes de Node.Js"
+               title="NPM | Sistema de gestión de paquetes de Node.Js">
+            <img src="/images/tech/python.png" alt="Python | Lenguaje de programación potente"
+               title="Python | Lenguaje de programación potente">
+            <img src="/images/tech/django.png"
+               alt="Django | Framework web de Python utilizado para crear API's y sitios web"
+               title="Django | Framework web de Python utilizado para crear API's y sitios web">
+            <img src="/images/tech/git.png" alt="GIT | Software de control de versiones"
+               title="GIT | Software de control de versiones">
+            <img src="/images/tech/console.png" alt="Consola | Utilizada para trabajar a mayor velocidad"
+               title="Consola | Utilizada para trabajar a mayor velocidad">
+         </div>
+      </section> <!-- Services -->
+      <section id="services" class="services">
+         <h2>services()</h2>
+         <p class="title">// Services I offer to my clients</p>
+         <div class="services__container">
+            <section class="services__container__service"> <i class="fas fa-mobile-alt"></i>
+               <h3>Fully responsive</h3>
+               <p>Your site will display properly on any device, including desktop computers,
+                  tablets and mobile phones.</p>
+            </section>
+            <section class="services__container__service"> <i class="fas fa-pencil-ruler"></i>
+               <h3>Creative Design</h3>
+               <p>A good and attractive web design helps you keep your leads on your site,
+                  which is the digital face of your business.</p>
+            </section>
+            <section class="services__container__service"> <i class="fas fa-code"></i>
+               <h3>Backend Connection</h3>
+               <p>Does your page need user registration or data storage? In a short time we
+                  will achieve that and more.</p>
+            </section>
+            <section class="services__container__service"> <i class="fas fa-server"></i>
+               <h3>Data Control</h3>
+               <p>I give you the tools to manage your users and their data from the palm of
+                  your hand.</p>
+            </section>
+            <section class="services__container__service"> <i class="fas fa-graduation-cap"></i>
+               <h3>Training</h3>
+               <p>I will show you all the details of your website and going forward it will be
+                  easily updatable by yourself. </p>
+            </section>
+            <section class="services__container__service"> <i class="fas fa-wrench"></i>
+               <h3>Problems</h3>
+               <p>You have a problem? 24/7 technical support</p>
+            </section>
+         </div>
+      </section> <!-- Proyectos -->
+      <section id="works" class="works">
+         <h2>works()</h2>
+         <p class="title">// Services I offer to my clients</p>
+         <h3 class="sub-title">SOME OF MY WORKS</h3>
+         <div class="works__container">
 
-			</div>
-		</section> <!-- Services -->
-		<section id="services" class="services">
-			<h2>services()</h2>
-			<p class="title">// Services I offer to my clients</p>
-			<div class="services__container">
-				<section class="services__container__service"> <i class="fas fa-mobile-alt"></i>
-					<h3>Fully responsive</h3>
-					<p>Your site will display properly on any device, including desktop computers,
-						tablets and mobile phones.</p>
-				</section>
-				<section class="services__container__service"> <i class="fas fa-pencil-ruler"></i>
-					<h3>Creative Design</h3>
-					<p>A good and attractive web design helps you keep your leads on your site,
-						which is the digital face of your business.</p>
-				</section>
-				<section class="services__container__service"> <i class="fas fa-code"></i>
-					<h3>Backend Connection</h3>
-					<p>Does your page need user registration or data storage? In a short time we
-						will achieve that and more.</p>
-				</section>
-				<section class="services__container__service"> <i class="fas fa-server"></i>
-					<h3>Data Control</h3>
-					<p>I give you the tools to manage your users and their data from the palm of
-						your hand.</p>
-				</section>
-				<section class="services__container__service"> <i class="fas fa-graduation-cap"></i>
-					<h3>Training</h3>
-					<p>I will show you all the details of your website and going forward it will be
-						easily updatable by yourself. </p>
-				</section>
-				<section class="services__container__service"> <i class="fas fa-wrench"></i>
-					<h3>Problems</h3>
-					<p>You have a problem? 24/7 technical support</p>
-				</section>
-			</div>
-		</section> <!-- Proyectos -->
-		<section id="works" class="works">
-			<h2>works()</h2>
-			<div id="carouselExampleControls" class="works__carousel carousel slide carousel-css"
-				data-bs-ride="carousel">
-				<div class="carousel-inner">
-					<div class="carousel-item active"> <img src="images/fb.jpg" class="d-block w-100"
-							alt="Carousel Facebook Image"> </div>
-					<div class="carousel-item"> <img src="images/gm.jpg" class="d-block w-100"
-							alt="Carousel Gmail Image"> </div>
-				</div> <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-					data-bs-slide="prev"> <span class="carousel-control-prev-icon" aria-hidden="true"></span> <span
-						class="visually-hidden">Previous</span> </button> <button class="carousel-control-next"
-					type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next"> <span
-						class="carousel-control-next-icon" aria-hidden="true"></span> <span
-						class="visually-hidden">Next</span> </button>
-			</div>
-		</section> <!-- Contact -->
-		<section id="contact" class="contact">
-			<h2>contact()</h2>
-			<p class="title">// Let's create something beautiful</p>
-			<div class="contact__box">
-				<div class="contact__box__form">
-					<form action="/" method="post"> <input type="text" class="form-input" placeholder="Name"> <input
-							type="email" class="form-input" placeholder="Email Adress"> <input type="text"
-							class="form-input" placeholder="Phone"> <textarea name="" class="form-input" id="" cols="30"
-							rows="10" placeholder="Message"></textarea> <button type="submit"
-							class="btn-form">Contact</button> </form>
-				</div>
-				<div class="content">
-					<div class="cloud">
-						<div class="base"></div>
-						<div class="base circle1"></div>
-						<div class="base circle2"></div>
-						<div class="connection">
-							<div class="wires">
-								<div class="wire"></div>
-								<div class="wire"></div>
-								<div class="wire"></div>
-							</div>
-							<div class="wires-x">
-								<div class="wire wire-x1"></div>
-								<div class="wire wire-x2"></div>
-								<div class="wire wire-x3"></div>
-							</div>
-							<div class="wires-y">
-								<div class="wire wire-y1"></div>
-								<div class="wire wire-y2"></div>
-								<div class="wire wire-y3"></div>
-							</div>
-						</div>
-					</div>
-					<div class="database">
-						<div class="block">
-							<div class="lines">
-								<div class="line"></div>
-								<div class="line"></div>
-								<div class="line"></div>
-								<div class="line"></div>
-								<div class="line"></div>
-							</div>
-							<div class="points">
-								<div class="point"></div>
-								<div class="point"></div>
-							</div>
-						</div>
-						<div class="division"></div>
-						<div class="block medium">
-							<div class="lines">
-								<div class="line"></div>
-								<div class="line"></div>
-								<div class="line"></div>
-								<div class="line"></div>
-								<div class="line"></div>
-							</div>
-							<div class="points">
-								<div class="point"></div>
-								<div class="point"></div>
-							</div>
-						</div>
-						<div class="division"></div>
-						<div class="block medium">
-							<div class="lines">
-								<div class="line"></div>
-								<div class="line"></div>
-								<div class="line"></div>
-								<div class="line"></div>
-								<div class="line"></div>
-							</div>
-							<div class="points">
-								<div class="point"></div>
-								<div class="point"></div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-	</main>
-	<footer class="footer"> <a href="#"><i class="fab fa-linkedin"></i></a> <a href="#"><i
-				class="fab fa-github"></i></a> </footer>
-	<script
-		type="text/javascript"> window.onscroll = function () { scrollFunction(); }; function scrollFunction() { var winScroll = document.body.scrollTop || document.documentElement.scrollTop; var height = document.documentElement.scrollHeight - document.documentElement.clientHeight; var scroll = (winScroll / height) * 100; document.getElementById("side-bar").style.width = scroll + "%"; } </script>
-	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-		integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
-		crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
-		integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT"
-		crossorigin="anonymous"></script>
+            <div id="carouselExampleControls" class="works__carousel carousel slide carousel-css"
+               data-bs-ride="carousel">
+               <div class="carousel-inner">
+                  <div class="carousel-item active"> <img src="images/fb.jpg" class="d-block w-100"
+                        alt="Carousel Facebook Image"> </div>
+               </div> <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                  data-bs-slide="prev"> <span class="carousel-control-prev-icon" aria-hidden="true"></span> <span
+                     class="visually-hidden">Previous</span> </button> <button class="carousel-control-next"
+                  type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next"> <span
+                     class="carousel-control-next-icon" aria-hidden="true"></span> <span
+                     class="visually-hidden">Next</span> </button>
+            </div>
+            <div id="carouselExampleControls" class="works__carousel carousel slide carousel-css"
+               data-bs-ride="carousel">
+               <div class="carousel-inner">
+                  <div class="carousel-item active"> <img src="images/fb.jpg" class="d-block w-100"
+                        alt="Carousel Facebook Image"> </div>
+               </div> <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                  data-bs-slide="prev"> <span class="carousel-control-prev-icon" aria-hidden="true"></span> <span
+                     class="visually-hidden">Previous</span> </button> <button class="carousel-control-next"
+                  type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next"> <span
+                     class="carousel-control-next-icon" aria-hidden="true"></span> <span
+                     class="visually-hidden">Next</span> </button>
+            </div>
+            <div id="carouselExampleControls" class="works__carousel carousel slide carousel-css"
+               data-bs-ride="carousel">
+               <div class="carousel-inner">
+                  <div class="carousel-item active"> <img src="images/fb.jpg" class="d-block w-100"
+                        alt="Carousel Facebook Image"> </div>
+               </div> <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                  data-bs-slide="prev"> <span class="carousel-control-prev-icon" aria-hidden="true"></span> <span
+                     class="visually-hidden">Previous</span> </button> <button class="carousel-control-next"
+                  type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next"> <span
+                     class="carousel-control-next-icon" aria-hidden="true"></span> <span
+                     class="visually-hidden">Next</span> </button>
+            </div>
+            <div id="carouselExampleControls" class="works__carousel carousel slide carousel-css"
+               data-bs-ride="carousel">
+               <div class="carousel-inner">
+                  <div class="carousel-item active"> <img src="images/fb.jpg" class="d-block w-100"
+                        alt="Carousel Facebook Image"> </div>
+               </div> <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                  data-bs-slide="prev"> <span class="carousel-control-prev-icon" aria-hidden="true"></span> <span
+                     class="visually-hidden">Previous</span> </button> <button class="carousel-control-next"
+                  type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next"> <span
+                     class="carousel-control-next-icon" aria-hidden="true"></span> <span
+                     class="visually-hidden">Next</span> </button>
+            </div>
+
+         </div>
+      </section> <!-- Contact -->
+      <section id="contact" class="contact">
+         <h2>contact()</h2>
+         <p class="title">// Let's create something beautiful</p>
+         <div class="contact__box">
+            <div class="contact__box__form">
+               <form action="/" method="post"> <input type="text" class="form-input" placeholder="Name"> <input
+                     type="email" class="form-input" placeholder="Email Adress"> <input type="text" class="form-input"
+                     placeholder="Phone"> <textarea name="" class="form-input" id="" cols="30" rows="10"
+                     placeholder="Message"></textarea> <button type="submit" class="btn-form">Contact</button> </form>
+            </div>
+            <div class="content">
+               <div class="cloud">
+                  <div class="base"></div>
+                  <div class="base circle1"></div>
+                  <div class="base circle2"></div>
+                  <div class="connection">
+                     <div class="wires">
+                        <div class="wire"></div>
+                        <div class="wire"></div>
+                        <div class="wire"></div>
+                     </div>
+                     <div class="wires-x">
+                        <div class="wire wire-x1"></div>
+                        <div class="wire wire-x2"></div>
+                        <div class="wire wire-x3"></div>
+                     </div>
+                     <div class="wires-y">
+                        <div class="wire wire-y1"></div>
+                        <div class="wire wire-y2"></div>
+                        <div class="wire wire-y3"></div>
+                     </div>
+                  </div>
+               </div>
+               <div class="database">
+                  <div class="block">
+                     <div class="lines">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                     </div>
+                     <div class="points">
+                        <div class="point"></div>
+                        <div class="point"></div>
+                     </div>
+                  </div>
+                  <div class="division"></div>
+                  <div class="block medium">
+                     <div class="lines">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                     </div>
+                     <div class="points">
+                        <div class="point"></div>
+                        <div class="point"></div>
+                     </div>
+                  </div>
+                  <div class="division"></div>
+                  <div class="block medium">
+                     <div class="lines">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                     </div>
+                     <div class="points">
+                        <div class="point"></div>
+                        <div class="point"></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+   </main>
+   <footer class="footer"> <a href="#"><i class="fab fa-linkedin"></i></a> <a href="#"><i class="fab fa-github"></i></a>
+   </footer>
+   <script
+      type="text/javascript"> window.onscroll = function () { scrollFunction(); }; function scrollFunction() { var winScroll = document.body.scrollTop || document.documentElement.scrollTop; var height = document.documentElement.scrollHeight - document.documentElement.clientHeight; var scroll = (winScroll / height) * 100; document.getElementById("side-bar").style.width = scroll + "%"; }</script>
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
+      integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT"
+      crossorigin="anonymous"></script>
 </body>
 
 </html>

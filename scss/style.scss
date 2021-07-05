@@ -12,16 +12,24 @@ header {
 h2 {
   font-size: 6.2rem;
   font-weight: 400;
-  margin-bottom: 1.8rem;
+  padding-top: 3.6rem;
 }
 
 h3 {
   font-size: 1.9rem;
-  margin: 3rem 0;
 }
+
 /* Subtitulos y framekeys */
+
+.title {
+  font-size: 1.9rem;
+  color: #757575;
+  margin: 1.5rem 0;
+  letter-spacing: 0.1rem;
+}
 .sub-title {
   font-size: 3rem;
+  margin:1.5rem 0;
   font-family: "VT323", monospace;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
@@ -43,7 +51,7 @@ h3 {
     background-color: map-get($colorsMap, "purple");
     position: fixed;
     top: 0;
-    left: -4.5rem;
+    left: -2.5rem;
   }
   &__cont {
     &__custom-toggler {
@@ -51,15 +59,16 @@ h3 {
     }
     &__brand img {
       height: 5rem;
+      padding-left: 2.5rem;
     }
     &__collapse {
       &__navbar {
-        margin-left: 4.5rem;
+        padding-left: 2.5rem;
 
         &__nav-item {
           margin: 0.2rem;
           &__nav-link {
-            font-size: 1.6rem;
+            font-size: 1.8rem;
             margin: 0 5px;
             text-decoration: none;
 
@@ -78,7 +87,7 @@ h3 {
 
 .down-header {
   height: 100vh;
-  padding-top: 25rem;
+  padding-top: 22rem;
   padding-left: 2.5rem;
   padding-right: 2.5rem;
   transition: all 0.8s ease-in-out;
@@ -109,14 +118,8 @@ h3 {
 }
 
 /* ABOUT */
-/* CAMBIAR EL H2 */
-.title {
-  font-size: 1.6rem;
-  color: #757575;
-  letter-spacing: 0.1rem;
-}
 .about {
-  padding: 6.3rem 2.5rem;
+  padding: 2.3rem 2.5rem;
   &__title a i {
     font-size: 3rem;
     color: map-get($colorsMap, "purple");
@@ -126,12 +129,14 @@ h3 {
     }
   }
   &__firstp {
-    font-size: 1.7rem;
+    font-size: 1.8rem;
+    margin: 1.5rem 0;
     color: map-get($colorsMap, "purple");
   }
 
   &__skills {
     &__ul {
+      margin-top: 3.5rem;
       display: grid;
       grid-template-columns: auto auto;
       gap: 1rem;
@@ -166,12 +171,11 @@ h3 {
 /* TECH */
 
 .tech {
-  padding: 6.3rem 2.5rem;
-  min-height: 25rem;
+  padding: 2.3rem 2.5rem;
   &__cont {
+    margin-top: 3.8rem;
     display: grid;
-    row-gap: 2rem;
-    column-gap: 2rem;
+    gap: 2rem;
     justify-content: center;
     grid-template-columns: auto auto;
     padding: 0;
@@ -211,16 +215,15 @@ h3 {
 /* Diseño mobile first con una columna, y a medida que va creciendo se divide en dos columnas y luego en 3 */
 
 .services {
-  padding: 6.3rem 2.5rem;
+  padding: 2.5rem;
   &__container {
     display: grid;
     grid-template-columns: auto;
-    column-gap: 1.5rem;
-    row-gap: 1.5rem;
+    gap: 1.5rem;
     &__service {
       display: flex;
       flex-direction: column;
-      padding: 4rem;
+      padding: 1.7rem;
       text-align: center;
       i {
         font-size: 6rem;
@@ -231,11 +234,12 @@ h3 {
         }
       }
       h3 {
-        font-size: 1.9rem;
+        font-size: 2.2rem;
         margin: 2rem 0;
+        font-weight: 500;
       }
       p {
-        font-size: 1.6rem;
+        font-size: 1.8rem;
       }
     }
   }
@@ -244,14 +248,19 @@ h3 {
 /* Works */
 
 .works {
-  padding: 6.3rem 2.5rem;
+  padding:2.5rem;
+  &__container {
+    margin-top: 3.8rem;
+    display: grid;
+    grid-template-columns: auto;
+    gap: 2.5rem;
+    justify-items: center;
+  }
+
   &__carousel {
-    width: 95%;
-    max-height: 50rem;
-    margin-top: 5rem;
+    max-width: 80%;
+    height: auto;
     .carousel-inner .carousel-item img {
-      width: 70rem;
-      max-height: 50rem;
       object-fit: cover;
     }
   }
@@ -260,7 +269,7 @@ h3 {
 /* Contact */
 
 .contact {
-  padding: 6.3rem 2.5rem;
+  padding: 2.5rem;
 
   &__box {
     margin-top: 4rem;
@@ -536,8 +545,8 @@ h3 {
 
 @media (min-width: 690px) {
   h2,
-  h3,
   .title,
+  .sub-title,
   .about__firstp,
   #home {
     padding-left: 5.5rem;
@@ -555,6 +564,10 @@ h3 {
   }
   .services__container {
     grid-template-columns: auto auto;
+  }
+
+  .works__container {
+    grid-template-columns: repeat(2, auto);
   }
 
   .tech__cont {
