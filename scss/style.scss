@@ -29,7 +29,7 @@ h3 {
 }
 .sub-title {
   font-size: 3rem;
-  margin:1.5rem 0;
+  margin: 1.5rem 0;
   font-family: "VT323", monospace;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
@@ -83,7 +83,7 @@ h3 {
   }
 }
 
-/* Down header */
+/* Down header, lo primero que se ve al entrar a la pagina */
 
 .down-header {
   height: 100vh;
@@ -117,7 +117,7 @@ h3 {
   }
 }
 
-/* ABOUT */
+/* ABOUT, incluye skills y tecnologias*/
 .about {
   padding: 2.3rem 2.5rem;
   &__title a i {
@@ -133,7 +133,7 @@ h3 {
     margin: 1.5rem 0;
     color: map-get($colorsMap, "purple");
   }
-
+  /* Skills */
   &__skills {
     &__ul {
       margin-top: 3.5rem;
@@ -168,7 +168,7 @@ h3 {
   }
 }
 
-/* TECH */
+/* TECH  */
 
 .tech {
   padding: 2.3rem 2.5rem;
@@ -248,7 +248,7 @@ h3 {
 /* Works */
 
 .works {
-  padding:2.5rem;
+  padding: 2.5rem;
   &__container {
     margin-top: 3.8rem;
     display: grid;
@@ -266,7 +266,7 @@ h3 {
   }
 }
 
-/* Contact */
+/* Contacto, al estar en modo mobile o en pantalla pequeña la aniamción desaparece */
 
 .contact {
   padding: 2.5rem;
@@ -342,8 +342,7 @@ h3 {
   }
 }
 
-/* Animacion */
-/* Database */
+/* ANIMACION */
 .content {
   display: none;
   justify-content: center;
@@ -542,7 +541,7 @@ h3 {
   }
 }
 /* Media querys */
-
+/* Generalmente son para agrandar tamaños de fuentes en pantallas de pc y cambiar la distribucion de los grids */
 @media (min-width: 690px) {
   h2,
   .title,

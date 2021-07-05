@@ -73,7 +73,7 @@ h3 {
         transition: all 0.5s ease !important;
         color: #682ae9 !important; }
 
-/* Down header */
+/* Down header, lo primero que se ve al entrar a la pagina */
 .down-header {
   height: 100vh;
   padding-top: 22rem;
@@ -100,9 +100,10 @@ h3 {
   .down-header__name-down span {
     display: block; }
 
-/* ABOUT */
+/* ABOUT, incluye skills y tecnologias*/
 .about {
-  padding: 2.3rem 2.5rem; }
+  padding: 2.3rem 2.5rem;
+  /* Skills */ }
   .about__title a i {
     font-size: 3rem;
     color: #682ae9; }
@@ -137,7 +138,7 @@ h3 {
       .about__skills__ul .skill span {
         display: block; }
 
-/* TECH */
+/* TECH  */
 .tech {
   padding: 2.3rem 2.5rem; }
   .tech__cont {
@@ -210,7 +211,7 @@ h3 {
     .works__carousel .carousel-inner .carousel-item img {
       object-fit: cover; }
 
-/* Contact */
+/* Contacto, al estar en modo mobile o en pantalla pequeña la aniamción desaparece */
 .contact {
   padding: 2.5rem; }
   .contact__box {
@@ -272,8 +273,7 @@ h3 {
             .contact__box__form form .btn-form:hover::before {
               transform: translate(1.2rem, 1.2rem); }
 
-/* Animacion */
-/* Database */
+/* ANIMACION */
 .content {
   display: none;
   justify-content: center;
@@ -440,6 +440,7 @@ h3 {
       transition: all 1s ease; }
 
 /* Media querys */
+/* Generalmente son para agrandar tamaños de fuentes en pantallas de pc y cambiar la distribucion de los grids */
 @media (min-width: 690px) {
   h2,
   .title,
