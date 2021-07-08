@@ -18,7 +18,7 @@ header {
   height: 100vh; }
 
 h2 {
-  font-size: 6.2rem;
+  font-size: 5.5rem;
   font-weight: 400;
   padding-top: 3.6rem; }
 
@@ -205,11 +205,6 @@ h3 {
     grid-template-columns: auto;
     gap: 2.5rem;
     justify-items: center; }
-  .works__carousel {
-    max-width: 80%;
-    height: auto; }
-    .works__carousel .carousel-inner .carousel-item img {
-      object-fit: cover; }
 
 /* Contacto, al estar en modo mobile o en pantalla pequeña la aniamción desaparece */
 .contact {
@@ -464,6 +459,8 @@ h3 {
     gap: 7rem; } }
 
 @media (min-width: 900px) {
+  h2 {
+    font-size: 6.2rem; }
   .tech__cont {
     grid-template-columns: repeat(6, auto);
     gap: 5rem; }
